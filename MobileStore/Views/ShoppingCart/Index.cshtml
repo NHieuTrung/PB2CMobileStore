@@ -1,0 +1,140 @@
+﻿@using Models.Bus;
+@model List<Models.ViewModels.ShoppingCartItemBrowser>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Model.Count() > 0)
+{
+    <div class="cart_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container">
+                        <div class="cart_title">Shopping Cart</div>
+                        <div class="cart_items">
+                            <ul class="cart_list">
+                                @foreach (var item in Model)
+                                {
+                                    <li class="cart_item clearfix">
+                                        <div class="cart_item_image"><img src=@item.FileImage alt=""></div>
+                                        <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                            <div class="cart_item_name cart_info_col">
+                                                <div class="cart_item_title">Name</div>
+                                                <div class="cart_item_text">@item.Name @item.RamSize/@item.MemorySize</div>
+                                            </div>
+                                            <div class="cart_item_color cart_info_col">
+                                                <div class="cart_item_title">Color</div>
+                                                <div class="cart_item_text"><span style="background-color:@item.Color;"></span>@item.Color</div>
+                                            </div>
+                                            <div class="cart_item_quantity cart_info_col">
+                                                <div class="cart_item_title">Quantity</div>
+                                                <div class="cart_item_text" style="width:100px"><input type="text" style="width:30%" class="txtQuantity" data-id="@item.ProductId-@item.ProductDetailId" value="@item.Quantiny"/></div>
+                                            </div>
+                                            <div class="cart_item_price cart_info_col">
+                                                <div class="cart_item_title">Price</div>
+                                                <div class="cart_item_text">
+                                                    @{
+                                                        FormatBus format = new FormatBus();
+                                                        var priceDisplay = format.FormatDecimalDisplay(item.Price);
+                                                        @priceDisplay
+
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div class="cart_item_total cart_info_col">
+                                                <div class="cart_item_title">Total</div>
+                                                <div class="cart_item_text">
+                                                    @{
+                                                        var x = item.Price * item.Quantiny;
+                                                        var priceToTalDisplay = format.FormatDecimalDisplay(x);
+                                                        @priceToTalDisplay
+                                                    }
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cart_item_total cart_info_col">
+                                                <div class="cart_item_text">
+                                                    <button type="button" class="btn btn-outline-danger btn-xs btnDeleteItem" data-id="@item.ProductId-@item.ProductDetailId">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                }
+
+                            </ul>
+                        </div>
+
+                        <!-- Order Total -->
+                        <div class="order_total">
+                            <div class="order_total_content text-md-right">
+                                <div class="order_total_title">Order Total:</div>
+                                <div class="order_total_amount">@{
+                                    FormatBus format1 = new FormatBus();
+                                    var totalPriceBill= format1.FormatDecimalDisplay(@ViewBag.TotalPrice);
+                                    @totalPriceBill
+                                }</div>
+                            </div>
+                        </div>
+
+                        <div class="cart_buttons">
+                            <button type="button" class="button cart_button_clear" id="btnContinueShopping">Continue Shopping</button>
+                            <button type="button" class="button cart_button_clear" id="btnUpdateCart">Update Cart</button>
+                            <button type="button" class="button cart_button_checkout btnCheckOut" id="btnCheckOut">@Html.ActionLink("Check it out", "CheckItOut","ShoppingCart")</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+
+    <div class="cart_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container">
+                        <div class="alert alert-danger" role="alert">
+                            Giỏ hàng chưa có sản phẩm!
+                        </div>
+                        <div class="cart_buttons">
+                            <button type="button" class="button cart_button_clear" id="btnContinueShopping">Continue Shopping</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Plugin1
+{
+    <link rel="stylesheet" type="text/css" href="/Assets/user/styles/bootstrap4/bootstrap.min.css">
+    <link href="/Assets/user/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/Assets/user/styles/cart_styles.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/user/styles/cart_responsive.css">
+}
+
+@section Plugin2
+{
+    <script src="/Assets/user/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/user/styles/bootstrap4/popper.js"></script>
+    <script src="/Assets/user/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="/Assets/user/plugins/greensock/TweenMax.min.js"></script>
+    <script src="/Assets/user/plugins/greensock/TimelineMax.min.js"></script>
+    <script src="/Assets/user/plugins/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="/Assets/user/plugins/greensock/animation.gsap.min.js"></script>
+    <script src="/Assets/user/plugins/greensock/ScrollToPlugin.min.js"></script>
+    <script src="/Assets/user/plugins/easing/easing.js"></script>
+    <script src="/Assets/user/js/cart_custom.js"></script>
+    <script src="/Assets/user/js/controller/cartController.js"></script>
+}
+
+
+

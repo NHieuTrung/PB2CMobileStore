@@ -1,0 +1,14 @@
+﻿<ul class="cat_menu">
+    @foreach (var item in ViewBag.Categories)
+    {
+        <li class="hassubs">
+            <a href="@Url.Action("Index","ShopPage",new { productType=@item.ProductTypeName})">@item.ProductTypeName<i class="fas fa-chevron-right"></i></a>
+            <ul>
+                @foreach (var item2 in item.ListBrandName)
+                {
+                    <li><a href="@Url.Action("Index","ShopPage",new { productType=@item.ProductTypeName,brand=item2})">@item2</a></li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

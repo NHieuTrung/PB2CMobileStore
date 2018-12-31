@@ -1,0 +1,372 @@
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\EntityFramework.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Razor.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\WebGrease.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\trung\source\repos\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\trung\source\repos\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\source\repos\MobileStore\MobileStore\obj\Debug\MobileStore.csprojResolveAssemblyReference.cache
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\ModelEF.dll
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\ModelEF.pdb
+C:\Users\trung\source\repos\MobileStore\MobileStore\bin\ModelEF.dll.config
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\EntityFramework.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\ModelEF.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Razor.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\WebGrease.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\ModelEF.pdb
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\ModelEF.dll.config
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\trung\Google Drive\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\EntityFramework.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\ModelEF.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Razor.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\WebGrease.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\ModelEF.pdb
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\ModelEF.dll.config
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\obj\Debug\MobileStore.csprojResolveAssemblyReference.cache
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\trung\Desktop\MobileStore-20180724T045541Z-001\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+E:\MobileStore\MobileStore\bin\ApplicationInsights.config
+E:\MobileStore\MobileStore\bin\MobileStore.dll.config
+E:\MobileStore\MobileStore\bin\MobileStore.dll
+E:\MobileStore\MobileStore\bin\MobileStore.pdb
+E:\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+E:\MobileStore\MobileStore\bin\EntityFramework.dll
+E:\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+E:\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+E:\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+E:\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+E:\MobileStore\MobileStore\bin\ModelEF.dll
+E:\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+E:\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+E:\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+E:\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+E:\MobileStore\MobileStore\bin\System.Web.Razor.dll
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+E:\MobileStore\MobileStore\bin\WebGrease.dll
+E:\MobileStore\MobileStore\bin\ModelEF.pdb
+E:\MobileStore\MobileStore\bin\ModelEF.dll.config
+E:\MobileStore\MobileStore\bin\EntityFramework.xml
+E:\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+E:\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+E:\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+E:\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+E:\MobileStore\MobileStore\bin\System.Web.Razor.xml
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+E:\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+E:\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+E:\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+E:\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+E:\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+E:\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+E:\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+E:\MobileStore\MobileStore\obj\Debug\MobileStore.csprojResolveAssemblyReference.cache
+E:\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+E:\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+E:\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\PagedList.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\PagedList.Mvc.dll
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\PagedList.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\bin\PagedList.Mvc.xml
+C:\Users\trung\Google Drive\MobileStore\MobileStore\obj\Debug\MobileStore.csprojResolveAssemblyReference.cache
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\EntityFramework.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\ModelEF.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\PagedList.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\PagedList.Mvc.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Razor.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\WebGrease.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\ModelEF.pdb
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\ModelEF.dll.config
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\PagedList.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\PagedList.Mvc.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csprojAssemblyReference.cache
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CopyComplete
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\trung\OneDrive\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\PagedList.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\PagedList.Mvc.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\trung\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\trung\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\trung\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csprojAssemblyReference.cache
+C:\Users\trung\Desktop\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CopyComplete
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\ApplicationInsights.config
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\MobileStore.dll.config
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\MobileStore.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\MobileStore.pdb
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Antlr3.Runtime.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\EntityFramework.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\EntityFramework.SqlServer.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.Web.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\ModelEF.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Newtonsoft.Json.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\PagedList.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\PagedList.Mvc.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Helpers.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Mvc.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Optimization.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Razor.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\WebGrease.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\ModelEF.pdb
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\ModelEF.dll.config
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\EntityFramework.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\PagedList.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\PagedList.Mvc.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Helpers.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Mvc.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Optimization.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.Razor.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Newtonsoft.Json.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\MobileStore.csprojAssemblyReference.cache
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\MobileStore.csproj.CopyComplete
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\MobileStore.dll
+C:\Users\huyluuit\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\MobileStore.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Models.dll
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Models.pdb
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Models.dll.config
+C:\Users\trung\Desktop\MobileStore\MobileStore\bin\Facebook.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\ApplicationInsights.config
+D:\Projects\PB2CMobileStore\MobileStore\bin\MobileStore.dll.config
+D:\Projects\PB2CMobileStore\MobileStore\bin\MobileStore.dll
+D:\Projects\PB2CMobileStore\MobileStore\bin\MobileStore.pdb
+D:\Projects\PB2CMobileStore\MobileStore\bin\Models.dll
+D:\Projects\PB2CMobileStore\MobileStore\bin\Models.pdb
+D:\Projects\PB2CMobileStore\MobileStore\bin\Models.dll.config
+D:\Projects\PB2CMobileStore\MobileStore\bin\EntityFramework.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\EntityFramework.SqlServer.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Facebook.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\PagedList.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\PagedList.Mvc.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.Helpers.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.Mvc.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.Optimization.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.Razor.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.WebPages.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\System.Web.WebPages.Razor.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Antlr3.Runtime.pdb
+D:\Projects\PB2CMobileStore\MobileStore\bin\Newtonsoft.Json.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\PB2CMobileStore\MobileStore\bin\Microsoft.AI.Web.xml
+D:\Projects\PB2CMobileStore\MobileStore\obj\Debug\MobileStore.csprojAssemblyReference.cache
+D:\Projects\PB2CMobileStore\MobileStore\obj\Debug\MobileStore.csproj.CoreCompileInputs.cache
+D:\Projects\PB2CMobileStore\MobileStore\obj\Debug\MobileStore.csproj.CopyComplete
+D:\Projects\PB2CMobileStore\MobileStore\obj\Debug\MobileStore.dll
+D:\Projects\PB2CMobileStore\MobileStore\obj\Debug\MobileStore.pdb

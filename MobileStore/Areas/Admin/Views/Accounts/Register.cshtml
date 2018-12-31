@@ -1,0 +1,187 @@
+﻿@model Models.ViewModels.RegisterModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Admin Free Bootstrap Admin Dashboard Template</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="/Assets/admin/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/Assets/admin/vendors/iconfonts/puse-icons-feather/feather.css">
+    <link rel="stylesheet" href="/Assets/admin/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="/Assets/admin/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/Assets/admin/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="/Assets/admin/images/favicon.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
+            <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
+                <div class="row w-100">
+                    <div class="col-lg-4 mx-auto">
+                        <h2 class="text-center mb-4">Register</h2>
+                        <div class="auto-form-wrapper">
+                            @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "registerForm" }))
+                            {
+                                @Html.AntiForgeryToken();
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.MemberEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email", @type = "email" } })
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.MemberEmail)</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.PasswordFor(model => model.MemberPassword, new { @class = "form-control", @placeholder = "Password" })
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.MemberPassword)</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="password" name="re_password" class="form-control" placeholder="Confirm Password">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Full Name" } })
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.FullName)</p>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Giới tính</label>
+                                    <div class="col-sm-9">
+                                        @Html.DropDownList("GenderTypeId", null, htmlAttributes: new { @class = "form-control" })
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.HomeAddress, new { htmlAttributes = new { @class = "form-control", @placeholder = "Home Address" } })
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.HomeAddress)</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control", @placeholder = "Phone Number", @type = "number" } })
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="mdi mdi-check-circle-outline"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.PhoneNumber)</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.CodeAuth, new { htmlAttributes = new { @class = "form-control", @placeholder = "Mã xác thực" } })
+                                        <div class="input-group-append">
+                                                <button id="btnGetAuthCode" class="btn btn-success" type="button">Lấy mã xác thực</button>
+                                        </div>
+                                    </div>
+                                    <p style="color:red;float:right">@Html.ValidationMessageFor(model => model.CodeAuth)</p>
+                                </div>
+
+                                <div class="form-group d-flex justify-content-center">
+
+                                    <div class="form-check form-check-flat mt-0">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked> I agree to the terms
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary submit-btn btn-block">Register</button>
+                                </div>
+                                <div class="text-block text-center my-3">
+                                    <span class="text-small font-weight-semibold">Already have and account ?</span>
+                                    <a href="@Url.Action("Login","Accounts",new { Area="Admin"})" class="text-black text-small">Login</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+
+
+
+
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/Assets/admin/vendors/js/vendor.bundle.base.js"></script>
+    <script src="/Assets/admin/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/Assets/admin/js/off-canvas.js"></script>
+    <script src="/Assets/admin/js/misc.js"></script>
+    <!-- endinject -->
+
+    <script>
+        $('#btnGetAuthCode').off('click').on('click', function () {
+            alert("Đang kiểm tra...")
+            var memberEmail = document.getElementById('MemberEmail').value;
+            if (memberEmail) {
+                $.ajax({
+                    url: '/Accounts/GetAuthenticationInEmail',
+                    data: { Email: memberEmail },
+                    dataType: 'json',
+                    type: 'POST',
+                    success: function (res) {
+                        if (res.status == true) {
+                            alert("Mã xác thực đã được gửi vào email  " + memberEmail)
+                        }
+                        else {
+                            alert("Email " + memberEmail+ " đã tồn tại" )
+                        }
+                    }
+                });
+            }
+            else {
+                alert("Ban chua nhap email")
+            }
+            
+        });
+    </script>
+
+
+</body>
+</html>

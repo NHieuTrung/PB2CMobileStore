@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobileStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BrandType">
+    <Key>
+      <PropertyRef Name="BrandTypeId" />
+    </Key>
+    <Property Name="BrandTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__BrandTy__47DBAE45" FromRole="BrandType" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="GenderType">
+    <Key>
+      <PropertyRef Name="GenderTypeId" />
+    </Key>
+    <Property Name="GenderTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenderName" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Members" Relationship="Self.FK__Member__GenderTy__3D5E1FD2" FromRole="GenderType" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Import">
+    <Key>
+      <PropertyRef Name="ImportId" />
+    </Key>
+    <Property Name="ImportId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VendorId" Type="Int32" />
+    <Property Name="ImportDate" Type="DateTime" Precision="3" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__Import__Employee__619B8048" FromRole="Import" ToRole="Member" />
+    <NavigationProperty Name="Vendor" Relationship="Self.FK__Import__VendorId__60A75C0F" FromRole="Import" ToRole="Vendor" />
+    <NavigationProperty Name="ImportItems" Relationship="Self.FK__ImportIte__Impor__6477ECF3" FromRole="Import" ToRole="ImportItem" />
+  </EntityType>
+  <EntityType Name="ImportItem">
+    <Key>
+      <PropertyRef Name="ImportItemId" />
+    </Key>
+    <Property Name="ImportItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImportId" Type="Int32" />
+    <Property Name="ProductPortableDeviceId" Type="Int32" />
+    <Property Name="ProductAccessoriesId" Type="Int32" />
+    <Property Name="Quantiny" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Import" Relationship="Self.FK__ImportIte__Impor__6477ECF3" FromRole="ImportItem" ToRole="Import" />
+    <NavigationProperty Name="ProductPortableDevice" Relationship="Self.FK__ImportIte__Produ__656C112C" FromRole="ImportItem" ToRole="ProductPortableDevice" />
+    <NavigationProperty Name="ProductAccessory" Relationship="Self.FK__ImportIte__Produ__66603565" FromRole="ImportItem" ToRole="ProductAccessory" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="MemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MemberPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="GenderTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="HomeAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RegDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FileImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StoreId" Type="Int32" />
+    <Property Name="MemberGoogleId" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MemberFacebookId" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MemberTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GenderType" Relationship="Self.FK__Member__GenderTy__3D5E1FD2" FromRole="Member" ToRole="GenderType" />
+    <NavigationProperty Name="Imports" Relationship="Self.FK__Import__Employee__619B8048" FromRole="Member" ToRole="Import" />
+    <NavigationProperty Name="MemberType" Relationship="Self.FK__Member__MemberTy__3F466844" FromRole="Member" ToRole="MemberType" />
+    <NavigationProperty Name="Store" Relationship="Self.FK__Member__StoreId__3E52440B" FromRole="Member" ToRole="Store" />
+    <NavigationProperty Name="ShoppingCarts" Relationship="Self.FK__ShoppingC__Custo__571DF1D5" FromRole="Member" ToRole="ShoppingCart" />
+    <NavigationProperty Name="ShoppingCarts1" Relationship="Self.FK__ShoppingC__Emplo__5812160E" FromRole="Member" ToRole="ShoppingCart" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="MemberTypeId" />
+    </Key>
+    <Property Name="MemberTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleMember" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Members" Relationship="Self.FK__Member__MemberTy__3F466844" FromRole="MemberType" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FileImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BrandTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ProductTypeId" Type="Int32" Nullable="false" />
+    <Property Name="RealeaseDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="BrandType" Relationship="Self.FK__Product__BrandTy__47DBAE45" FromRole="Product" ToRole="BrandType" />
+    <NavigationProperty Name="ProductType" Relationship="Self.FK__Product__Product__48CFD27E" FromRole="Product" ToRole="ProductType" />
+    <NavigationProperty Name="ProductAccessories" Relationship="Self.FK__ProductAc__Produ__5165187F" FromRole="Product" ToRole="ProductAccessory" />
+    <NavigationProperty Name="ProductPortableDevices" Relationship="Self.FK__ProductPo__Produ__4BAC3F29" FromRole="Product" ToRole="ProductPortableDevice" />
+  </EntityType>
+  <EntityType Name="ProductAccessory">
+    <Key>
+      <PropertyRef Name="ProductAccessoryId" />
+    </Key>
+    <Property Name="ProductAccessoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ImageFile" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Quantiny" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ImportItems" Relationship="Self.FK__ImportIte__Produ__66603565" FromRole="ProductAccessory" ToRole="ImportItem" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductAc__Produ__5165187F" FromRole="ProductAccessory" ToRole="Product" />
+    <NavigationProperty Name="ShoppingCartItems" Relationship="Self.FK__ShoppingC__Produ__5DCAEF64" FromRole="ProductAccessory" ToRole="ShoppingCartItem" />
+  </EntityType>
+  <EntityType Name="ProductPortableDevice">
+    <Key>
+      <PropertyRef Name="ProductPortableDeviceId" />
+    </Key>
+    <Property Name="ProductPortableDeviceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MemorySize" Type="Int32" Nullable="false" />
+    <Property Name="RamSize" Type="Int32" Nullable="false" />
+    <Property Name="Display" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="FileImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Quantiny" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ImportItems" Relationship="Self.FK__ImportIte__Produ__656C112C" FromRole="ProductPortableDevice" ToRole="ImportItem" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductPo__Produ__4BAC3F29" FromRole="ProductPortableDevice" ToRole="Product" />
+    <NavigationProperty Name="ShoppingCartItems" Relationship="Self.FK__ShoppingC__Produ__5CD6CB2B" FromRole="ProductPortableDevice" ToRole="ShoppingCartItem" />
+    <NavigationProperty Name="StoreImeis" Relationship="Self.FK__StoreImei__Produ__4E88ABD4" FromRole="ProductPortableDevice" ToRole="StoreImei" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="ProductTypeId" />
+    </Key>
+    <Property Name="ProductTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductTypeName" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__Product__48CFD27E" FromRole="ProductType" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Promotion">
+    <Key>
+      <PropertyRef Name="PromotionId" />
+    </Key>
+    <Property Name="PromotionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PromotionCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Discount" Type="Int32" />
+    <NavigationProperty Name="ShoppingCarts" Relationship="Self.FK__ShoppingC__Promo__59063A47" FromRole="Promotion" ToRole="ShoppingCart" />
+  </EntityType>
+  <EntityType Name="ShoppingCart">
+    <Key>
+      <PropertyRef Name="ShoppingCartId" />
+    </Key>
+    <Property Name="ShoppingCartId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ShippedDate" Type="DateTime" Precision="0" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <Property Name="PromotionId" Type="Int32" />
+    <Property Name="PaymentType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StatusCart" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__ShoppingC__Custo__571DF1D5" FromRole="ShoppingCart" ToRole="Member" />
+    <NavigationProperty Name="Member1" Relationship="Self.FK__ShoppingC__Emplo__5812160E" FromRole="ShoppingCart" ToRole="Member" />
+    <NavigationProperty Name="Promotion" Relationship="Self.FK__ShoppingC__Promo__59063A47" FromRole="ShoppingCart" ToRole="Promotion" />
+    <NavigationProperty Name="ShoppingCartItems" Relationship="Self.FK__ShoppingC__Shopp__5BE2A6F2" FromRole="ShoppingCart" ToRole="ShoppingCartItem" />
+  </EntityType>
+  <EntityType Name="ShoppingCartItem">
+    <Key>
+      <PropertyRef Name="ShoppingCartItemId" />
+    </Key>
+    <Property Name="ShoppingCartItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShoppingCartId" Type="Int32" Nullable="false" />
+    <Property Name="ProductPortableDeviceId" Type="Int32" />
+    <Property Name="ProductAccessoryId" Type="Int32" />
+    <Property Name="Quantiny" Type="Int32" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Discount" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="ProductAccessory" Relationship="Self.FK__ShoppingC__Produ__5DCAEF64" FromRole="ShoppingCartItem" ToRole="ProductAccessory" />
+    <NavigationProperty Name="ProductPortableDevice" Relationship="Self.FK__ShoppingC__Produ__5CD6CB2B" FromRole="ShoppingCartItem" ToRole="ProductPortableDevice" />
+    <NavigationProperty Name="ShoppingCart" Relationship="Self.FK__ShoppingC__Shopp__5BE2A6F2" FromRole="ShoppingCartItem" ToRole="ShoppingCart" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StoreAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneStore" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailStore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Members" Relationship="Self.FK__Member__StoreId__3E52440B" FromRole="Store" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="StoreImei">
+    <Key>
+      <PropertyRef Name="ImeiPhone" />
+    </Key>
+    <Property Name="ImeiPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProductPortableDeviceId" Type="Int32" Nullable="false" />
+    <Property Name="DateActiveWarranty" Type="DateTime" Precision="0" />
+    <Property Name="StatusPhone" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductPortableDevice" Relationship="Self.FK__StoreImei__Produ__4E88ABD4" FromRole="StoreImei" ToRole="ProductPortableDevice" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="VendorId" />
+    </Key>
+    <Property Name="VendorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VendorName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BranchAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Imports" Relationship="Self.FK__Import__VendorId__60A75C0F" FromRole="Vendor" ToRole="Import" />
+  </EntityType>
+  <Association Name="FK__Product__BrandTy__47DBAE45">
+    <End Role="BrandType" Type="Self.BrandType" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BrandType">
+        <PropertyRef Name="BrandTypeId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="BrandTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__GenderTy__3D5E1FD2">
+    <End Role="GenderType" Type="Self.GenderType" Multiplicity="1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderType">
+        <PropertyRef Name="GenderTypeId" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="GenderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Import__Employee__619B8048">
+    <End Role="Member" Type="Self.Member" Multiplicity="0..1" />
+    <End Role="Import" Type="Self.Import" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="Import">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Import__VendorId__60A75C0F">
+    <End Role="Vendor" Type="Self.Vendor" Multiplicity="0..1" />
+    <End Role="Import" Type="Self.Import" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorId" />
+      </Principal>
+      <Dependent Role="Import">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ImportIte__Impor__6477ECF3">
+    <End Role="Import" Type="Self.Import" Multiplicity="0..1" />
+    <End Role="ImportItem" Type="Self.ImportItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Import">
+        <PropertyRef Name="ImportId" />
+      </Principal>
+      <Dependent Role="ImportItem">
+        <PropertyRef Name="ImportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ImportIte__Produ__656C112C">
+    <End Role="ProductPortableDevice" Type="Self.ProductPortableDevice" Multiplicity="0..1" />
+    <End Role="ImportItem" Type="Self.ImportItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductPortableDevice">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Principal>
+      <Dependent Role="ImportItem">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ImportIte__Produ__66603565">
+    <End Role="ProductAccessory" Type="Self.ProductAccessory" Multiplicity="0..1" />
+    <End Role="ImportItem" Type="Self.ImportItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductAccessory">
+        <PropertyRef Name="ProductAccessoryId" />
+      </Principal>
+      <Dependent Role="ImportItem">
+        <PropertyRef Name="ProductAccessoriesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__MemberTy__3F466844">
+    <End Role="MemberType" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__StoreId__3E52440B">
+    <End Role="Store" Type="Self.Store" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Custo__571DF1D5">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Emplo__5812160E">
+    <End Role="Member" Type="Self.Member" Multiplicity="0..1" />
+    <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__Product__48CFD27E">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="ProductTypeId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductAc__Produ__5165187F">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductAccessory" Type="Self.ProductAccessory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductAccessory">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPo__Produ__4BAC3F29">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductPortableDevice" Type="Self.ProductPortableDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductPortableDevice">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Produ__5DCAEF64">
+    <End Role="ProductAccessory" Type="Self.ProductAccessory" Multiplicity="0..1" />
+    <End Role="ShoppingCartItem" Type="Self.ShoppingCartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductAccessory">
+        <PropertyRef Name="ProductAccessoryId" />
+      </Principal>
+      <Dependent Role="ShoppingCartItem">
+        <PropertyRef Name="ProductAccessoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Produ__5CD6CB2B">
+    <End Role="ProductPortableDevice" Type="Self.ProductPortableDevice" Multiplicity="0..1" />
+    <End Role="ShoppingCartItem" Type="Self.ShoppingCartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductPortableDevice">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Principal>
+      <Dependent Role="ShoppingCartItem">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StoreImei__Produ__4E88ABD4">
+    <End Role="ProductPortableDevice" Type="Self.ProductPortableDevice" Multiplicity="1" />
+    <End Role="StoreImei" Type="Self.StoreImei" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductPortableDevice">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Principal>
+      <Dependent Role="StoreImei">
+        <PropertyRef Name="ProductPortableDeviceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Promo__59063A47">
+    <End Role="Promotion" Type="Self.Promotion" Multiplicity="0..1" />
+    <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotion">
+        <PropertyRef Name="PromotionId" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="PromotionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Shopp__5BE2A6F2">
+    <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="1" />
+    <End Role="ShoppingCartItem" Type="Self.ShoppingCartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShoppingCart">
+        <PropertyRef Name="ShoppingCartId" />
+      </Principal>
+      <Dependent Role="ShoppingCartItem">
+        <PropertyRef Name="ShoppingCartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MobileStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BrandTypes" EntityType="Self.BrandType" />
+    <EntitySet Name="GenderTypes" EntityType="Self.GenderType" />
+    <EntitySet Name="Imports" EntityType="Self.Import" />
+    <EntitySet Name="ImportItems" EntityType="Self.ImportItem" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <EntitySet Name="MemberTypes" EntityType="Self.MemberType" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductAccessories" EntityType="Self.ProductAccessory" />
+    <EntitySet Name="ProductPortableDevices" EntityType="Self.ProductPortableDevice" />
+    <EntitySet Name="ProductTypes" EntityType="Self.ProductType" />
+    <EntitySet Name="Promotions" EntityType="Self.Promotion" />
+    <EntitySet Name="ShoppingCarts" EntityType="Self.ShoppingCart" />
+    <EntitySet Name="ShoppingCartItems" EntityType="Self.ShoppingCartItem" />
+    <EntitySet Name="Stores" EntityType="Self.Store" />
+    <EntitySet Name="StoreImeis" EntityType="Self.StoreImei" />
+    <EntitySet Name="Vendors" EntityType="Self.Vendor" />
+    <AssociationSet Name="FK__Product__BrandTy__47DBAE45" Association="Self.FK__Product__BrandTy__47DBAE45">
+      <End Role="BrandType" EntitySet="BrandTypes" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__GenderTy__3D5E1FD2" Association="Self.FK__Member__GenderTy__3D5E1FD2">
+      <End Role="GenderType" EntitySet="GenderTypes" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Import__Employee__619B8048" Association="Self.FK__Import__Employee__619B8048">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Import" EntitySet="Imports" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Import__VendorId__60A75C0F" Association="Self.FK__Import__VendorId__60A75C0F">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="Import" EntitySet="Imports" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ImportIte__Impor__6477ECF3" Association="Self.FK__ImportIte__Impor__6477ECF3">
+      <End Role="Import" EntitySet="Imports" />
+      <End Role="ImportItem" EntitySet="ImportItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ImportIte__Produ__656C112C" Association="Self.FK__ImportIte__Produ__656C112C">
+      <End Role="ProductPortableDevice" EntitySet="ProductPortableDevices" />
+      <End Role="ImportItem" EntitySet="ImportItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ImportIte__Produ__66603565" Association="Self.FK__ImportIte__Produ__66603565">
+      <End Role="ProductAccessory" EntitySet="ProductAccessories" />
+      <End Role="ImportItem" EntitySet="ImportItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__MemberTy__3F466844" Association="Self.FK__Member__MemberTy__3F466844">
+      <End Role="MemberType" EntitySet="MemberTypes" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__StoreId__3E52440B" Association="Self.FK__Member__StoreId__3E52440B">
+      <End Role="Store" EntitySet="Stores" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Custo__571DF1D5" Association="Self.FK__ShoppingC__Custo__571DF1D5">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Emplo__5812160E" Association="Self.FK__ShoppingC__Emplo__5812160E">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__Product__48CFD27E" Association="Self.FK__Product__Product__48CFD27E">
+      <End Role="ProductType" EntitySet="ProductTypes" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductAc__Produ__5165187F" Association="Self.FK__ProductAc__Produ__5165187F">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductAccessory" EntitySet="ProductAccessories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPo__Produ__4BAC3F29" Association="Self.FK__ProductPo__Produ__4BAC3F29">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductPortableDevice" EntitySet="ProductPortableDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Produ__5DCAEF64" Association="Self.FK__ShoppingC__Produ__5DCAEF64">
+      <End Role="ProductAccessory" EntitySet="ProductAccessories" />
+      <End Role="ShoppingCartItem" EntitySet="ShoppingCartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Produ__5CD6CB2B" Association="Self.FK__ShoppingC__Produ__5CD6CB2B">
+      <End Role="ProductPortableDevice" EntitySet="ProductPortableDevices" />
+      <End Role="ShoppingCartItem" EntitySet="ShoppingCartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StoreImei__Produ__4E88ABD4" Association="Self.FK__StoreImei__Produ__4E88ABD4">
+      <End Role="ProductPortableDevice" EntitySet="ProductPortableDevices" />
+      <End Role="StoreImei" EntitySet="StoreImeis" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Promo__59063A47" Association="Self.FK__ShoppingC__Promo__59063A47">
+      <End Role="Promotion" EntitySet="Promotions" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Shopp__5BE2A6F2" Association="Self.FK__ShoppingC__Shopp__5BE2A6F2">
+      <End Role="ShoppingCart" EntitySet="ShoppingCarts" />
+      <End Role="ShoppingCartItem" EntitySet="ShoppingCartItems" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

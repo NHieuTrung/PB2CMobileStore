@@ -1,0 +1,10 @@
+﻿@using Models.Bus;
+@{
+    FormatBus format = new FormatBus();
+    foreach (var item in ViewBag.AllColorProduct)
+    {
+        <li class="color"><a href="#" title="@item" style="background : @format.ColorFormat(@item);"></a></li>
+    }
+}
+
+

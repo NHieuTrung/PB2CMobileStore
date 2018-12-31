@@ -1,0 +1,135 @@
+﻿@model Models.EF.Member
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div>
+        <h4>Member</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MemberEmail)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MemberEmail)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MemberPassword)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MemberPassword)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FullName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FullName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Birthday)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Birthday)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RegDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RegDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FileImage)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FileImage)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GenderType.GenderName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GenderType.GenderName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MemberType.RoleMember)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MemberType.RoleMember)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Store.StoreName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Store.StoreName)
+            </dd>
+
+        </dl>
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.MemberId }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+    </div>
+
+
+    @section PLugin1{
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="/Assets/admin/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="/Assets/admin/vendors/css/vendor.bundle.base.css">
+        <link rel="stylesheet" href="/Assets/admin/vendors/css/vendor.bundle.addons.css">
+        <!-- endinject -->
+        <!-- plugin css for this page -->
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/Assets/admin/css/style.css">
+        <!-- endinject -->
+        <link rel="shortcut icon" href="/Assets/admin/images/favicon.png" />
+        <!-- Data table -->
+        <link rel="stylesheet" type="text/css" href="/Assets/admin/vendors/DataTables/datatables.min.css" />
+    }
+
+    @section Plugin2{
+        <!-- plugins:js -->
+        <script src="/Assets/admin/vendors/js/vendor.bundle.base.js"></script>
+        <script src="/Assets/admin/vendors/js/vendor.bundle.addons.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page-->
+        <!-- End plugin js for this page-->
+        <!-- inject:js -->
+        <script src="/Assets/admin/js/off-canvas.js"></script>
+        <script src="/Assets/admin/js/misc.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page-->
+        <!-- End custom js for this page-->
+
+        <script type="text/javascript" src="/Assets/admin/vendors/DataTables/datatables.min.js"></script>
+        <script type="text/javascript" src="/Assets/admin/vendors/DataTables/JSDatatables.js"></script>
+    }

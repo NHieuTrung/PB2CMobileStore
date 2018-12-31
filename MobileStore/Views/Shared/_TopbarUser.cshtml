@@ -1,0 +1,15 @@
+﻿<div class="top_bar_user">
+    <div class="user_icon"><img src="/Assets/user/images/user.svg" alt=""></div>
+    @{
+        if (@ViewBag.DisplayUserName != null)
+        {
+            <div>@ViewBag.DisplayUserName</div>
+            <div><a id="btnSignOut" href="@Url.Action("Logout","Accounts",new { Area="Admin"})">Log out</a></div>
+        }
+        else
+        {
+            <div><a href="@Url.Action("Register","Accounts",new { Area="Admin"})">Register</a></div>
+            <div><a href="@Url.Action("Login","Accounts",new { Area="Admin"}) ">Sign in</a></div>
+        }
+    }
+</div>

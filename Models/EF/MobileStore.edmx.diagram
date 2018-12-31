@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69f9b8c75d624b84baa265aa7130de74" Name="Diagram1">
+        <EntityTypeShape EntityType="MobileStoreModel.BrandType" Width="1.5" PointX="3.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.GenderType" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Import" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ImportItem" Width="1.5" PointX="10.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Member" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.MemberType" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Product" Width="1.5" PointX="6" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ProductAccessory" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ProductPortableDevice" Width="1.5" PointX="8.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ProductType" Width="1.5" PointX="3.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Promotion" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ShoppingCart" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.ShoppingCartItem" Width="1.5" PointX="13.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Store" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.StoreImei" Width="1.5" PointX="10.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreModel.Vendor" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="MobileStoreModel.FK__Product__BrandTy__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Member__GenderTy__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Import__Employee__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Import__VendorId__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ImportIte__Impor__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ImportIte__Produ__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ImportIte__Produ__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Member__MemberTy__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Member__StoreId__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Custo__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Emplo__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__Product__Product__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ProductAc__Produ__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ProductPo__Produ__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Produ__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Produ__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__StoreImei__Produ__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Promo__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreModel.FK__ShoppingC__Shopp__5BE2A6F2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
